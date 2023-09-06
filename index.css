@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'ARCO';
+  src: url('fonts/ARCO.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(9,9,121);
+  background: linear-gradient(16deg, rgba(9,9,121,1) 12%, rgba(0,212,255,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titulo {
+  font-family: 'ARCO', 'Open sans';
+  font-size: 5rem;
+  height: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.titulo h1 {
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: aliceblue;
+  background-image: url('https://laevidencia.com.do/wp-content/uploads/2021/04/circuitos-tecnologia-1.jpg');
+  background-size: cover;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* text-shadow: 10px 10px 10px rgba(29, 32, 34, 0.671) ; */
+}
+
+.juegos {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.juegos > div {
+  aspect-ratio: 1 / 1;
+  height: 160px;
+  background-color: aliceblue;
+  border-radius: 1em;
+  overflow-x: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.juegos > div > div {
+  height: 100%;
+  width: 100%;
+  line-height: 1.6em;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,0.75) 30%, rgba(0,0,0,0.5) 90%);
+  color: white;
+  padding: 2em 1em;
+  position: absolute;
+  right: 100%;
+  transition: right linear 160ms;
+}
+
+.juegos div:hover > div {
+  right: 0;
+}
