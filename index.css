@@ -28,6 +28,7 @@ body {
   height: 50%;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
 .titulo h1 {
@@ -39,6 +40,13 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.logo {
+  position: absolute;
+  left: -25%;
+  opacity: 90%;
+  animation: logo 10s ease-in-out 0s infinite;
 }
 
 .juegos {
@@ -129,4 +137,32 @@ body {
   background-color: rgba(113, 61, 255, 0.5);
   background-size: cover;
   background-position: top center;
+}
+
+@keyframes logo {
+  0% {}
+  25% {
+    z-index: 1;
+    transform: scale(1.4) rotate(270deg);
+  }
+  40% {
+    opacity: 90%;
+  }
+  50% {
+    margin-left: 130%;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    z-index: -1;
+    transform: scale(.6) rotate(-180deg);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 90%;
+  }
 }
