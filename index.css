@@ -73,7 +73,7 @@ body {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75);
 }
 
-.juego > div {
+.juego a > div {
   height: 100%;
   width: 100%;
   line-height: 1.6em;
@@ -88,23 +88,23 @@ body {
   transition: right linear 160ms;
 }
 
-.juego.uno div {
+.juego.uno a div {
   background: linear-gradient(90deg, rgba(255, 174, 24, 0.9) 0%, rgba(255, 174, 24, 0.75) 30%, rgba(255, 174, 24, 0.5) 90%);
 }
-.juego.dos div {
+.juego.dos a div {
   background: linear-gradient(90deg, rgba(49, 255, 83, 0.9) 0%, rgba(49, 255, 83, 0.75) 30%, rgba(49, 255, 83, 0.5) 90%);
 }
-.juego.tres div {
+.juego.tres a div {
   background: linear-gradient(90deg, rgba(251, 255, 0, 0.9) 0%, rgba(251, 255, 0, 0.75) 30%, rgba(251, 255, 0, 0.5) 90%);
 }
-.juego.cuatro div {
+.juego.cuatro a div {
   background: linear-gradient(90deg, rgba(44, 118, 255, 0.9) 0%, rgba(44, 118, 255, 0.75) 30%, rgba(44, 118, 255, 0.5) 90%);
 }
-.juego.cinco div {
+.juego.cinco a div {
   background: linear-gradient(90deg, rgba(113, 61, 255, 0.9) 0%, rgba(113, 61, 255, 0.75) 30%, rgba(113, 61, 255, 0.5) 90%);
 }
 
-.juego:hover > div {
+.juego:hover a > div {
   right: 0;
 }
 
