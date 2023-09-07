@@ -39,7 +39,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  /* text-shadow: 10px 10px 10px rgba(29, 32, 34, 0.671) ; */
 }
 
 .juegos {
@@ -55,26 +54,79 @@ body {
 .juegos > div {
   aspect-ratio: 1 / 1;
   height: 160px;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 1em;
   overflow-x: hidden;
   position: relative;
   cursor: pointer;
 }
 
-.juegos > div > div {
+.juego {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75);
+}
+
+.juego > div {
   height: 100%;
   width: 100%;
   line-height: 1.6em;
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,0.75) 30%, rgba(0,0,0,0.5) 90%);
-  color: white;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 1.2em;
+  -webkit-text-stroke: white;
+  font-weight: bold;
   padding: 2em 1em;
   position: absolute;
   right: 100%;
   transition: right linear 160ms;
 }
 
-.juegos div:hover > div {
+.juego.uno div {
+  background: linear-gradient(90deg, rgba(255, 174, 24, 0.9) 0%, rgba(255, 174, 24, 0.75) 30%, rgba(255, 174, 24, 0.5) 90%);
+}
+.juego.dos div {
+  background: linear-gradient(90deg, rgba(49, 255, 83, 0.9) 0%, rgba(49, 255, 83, 0.75) 30%, rgba(49, 255, 83, 0.5) 90%);
+}
+.juego.tres div {
+  background: linear-gradient(90deg, rgba(251, 255, 0, 0.9) 0%, rgba(251, 255, 0, 0.75) 30%, rgba(251, 255, 0, 0.5) 90%);
+}
+.juego.cuatro div {
+  background: linear-gradient(90deg, rgba(44, 118, 255, 0.9) 0%, rgba(44, 118, 255, 0.75) 30%, rgba(44, 118, 255, 0.5) 90%);
+}
+.juego.cinco div {
+  background: linear-gradient(90deg, rgba(113, 61, 255, 0.9) 0%, rgba(113, 61, 255, 0.75) 30%, rgba(113, 61, 255, 0.5) 90%);
+}
+
+.juego:hover > div {
   right: 0;
+}
+
+.juego.uno {
+  background-image: url("./images/wilson.png");
+  background-color: rgba(255, 174, 24, 0.5);
+  background-size: cover;
+  background-position: top center;
+}
+.juego.dos {
+  background-image: url("./images/inge.png");
+  background-color: rgba(49, 255, 83, 0.5);
+  background-size: cover;
+  background-position: top center;
+}
+.juego.tres {
+  background-image: url("./images/orantes.png");
+  background-color: rgba(251, 255, 0, 0.5);
+  background-size: cover;
+  background-position: top center;
+}
+.juego.cuatro {
+  background-image: url("./images/arias.png");
+  background-color: rgba(44, 118, 255, 0.5);
+  background-size: cover;
+  background-position: top center;
+}
+.juego.cinco {
+  background-image: url("./images/niki.png");
+  background-color: rgba(113, 61, 255, 0.5);
+  background-size: cover;
+  background-position: top center;
 }
