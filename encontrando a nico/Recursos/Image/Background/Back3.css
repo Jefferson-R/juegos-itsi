@@ -1,0 +1,24 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: yellow;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.blog {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #058cad;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(5, 245, 5);
+}
+
+h1, h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+article {
+    margin-bottom: 20px;
+}

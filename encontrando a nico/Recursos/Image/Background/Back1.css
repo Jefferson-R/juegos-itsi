@@ -1,0 +1,21 @@
+*{
+    background-color: #2f0fbe;
+    color: #f8df00;
+}
+
+.factura {
+    border: 1px solid #14eb00;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #14eb00;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+}

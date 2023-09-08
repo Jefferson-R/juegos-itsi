@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: 'Pixelfont'; 
+    src: url('./Recursos/Fonts/PixelIntv-OPxd.ttf') format('truetype');
+}
+
+*{
+    background-color: #0f1031;
+    font-family: 'Pixelfont', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.game-container {
+    background-image: url(Recursos/Image/Background/back.png);
+    background-size: cover ;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    overflow: hidden;
+    
+}
+
+p{
+    color: #ffffff;
+    background: transparent;
+    display: block;
+    font-size: 25px;
+
+}
+
+.nico {
+    bottom: 315px;
+    left: 620px;
+    position: absolute;
+    width: 120px;
+    height: 190px;
+    cursor: pointer;
+    background-color: transparent;
+    display: none;
+   
+}
+
+.nicoIdle {
+    bottom: 315px;
+    left: 620px;
+    position: absolute;
+    width: 120px;
+    height: 190px;
+    background: transparent;
+    display: block;
+   
+}
+
+.score, .timer {
+    position: absolute; 
+    bottom: 50px; 
+    right: 10px; 
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.score {
+    bottom: 10px;
+    right: 10px;
+}
+
+#start-button {
+    color: #ffffff;
+
+}
