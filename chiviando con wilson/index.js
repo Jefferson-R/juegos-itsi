@@ -75,7 +75,7 @@ gameContainer.addEventListener('click', e => {
       cartasActivas.carta1.elementId = carta.id
       cartasActivas.carta1.cartaId = carta.dataset.cartaId
 
-    } else if (cartasActivas.count == 1) {
+    } else if (cartasActivas.count == 1 && cartasActivas.carta1.elementId != carta.id) {
       console.log('pase por 1')
       cartasActivas.count++
       cartasActivas.carta2.elementId = carta.id

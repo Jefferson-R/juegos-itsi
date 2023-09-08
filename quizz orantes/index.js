@@ -41,7 +41,7 @@ const preguntas = [
     <li>Java</li>
     <li>HTML</li>
   </ul>`,
-  `<p id="pregunta" data-respuesta="18">¿Cuántos modulos se ven a lo largo de los 3 años?</p>
+  `<p id="pregunta" data-respuesta="20">¿Cuántos modulos se ven a lo largo de los 3 años?</p>
   <ul id="respuestas">
     <li>8</li>
     <li>16</li>
