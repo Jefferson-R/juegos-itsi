@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;  
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(9,9,121);
+  background: linear-gradient(16deg, rgba(9,9,121,1) 12%, rgba(0,212,255,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.regresar {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+.disable-start {
+  animation: disbale-start 1s forwards;
+}
+
+.start-wilson {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-wilson img {
+  width: 40%;
+  border-radius: 1em;
+  border: 1px black solid;
+}
+
+.start-wilson div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.start-wilson div p {
+  background-color: white;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.start-wilson div button {
+  border-radius: 1em;
+  padding: 1.2em 0;
+  font-weight: bold;
+  color: white;
+  border: 1px white solid;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(255, 255, 255, .5);
+  cursor: pointer;
+}
+
+.start-wilson div button:focus {
+  animation: button-start 150ms linear;
+}
+
+@keyframes button-start {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes disbale-start {
+  10% {
+    margin-top: 100px;
+  }
+  30% {
+    margin-top: 100px;
+  }
+  100% {
+    margin-bottom: 100%;
+    display: none;
+  }
+}

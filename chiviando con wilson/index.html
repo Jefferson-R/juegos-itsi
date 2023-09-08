@@ -4,8 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chiviando con Wilson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./start.css">
+  <link rel="stylesheet" href="./game.css">
 </head>
 <body>
-  jeolo
+  <a href="../index.html" class="regresar"></a>
+  
+  <section class="start-wilson">
+
+    <img src="./Recursos/Image/Character/IDLE/Wilson idle-1 (1).gif" alt="wilson">
+
+    <div>
+      <p>¡Bienvenida/o a Chiviando con Wilson! Dale vuelta a las cartas hasta encontar su pareja, pero si te equivocas se aumentara el contador de fallos. Cada match que hagas entre 2 cartas te restara un fallo. ¡Ten cuidado porque si acumulas 3 de estos perderas!</p>
+      <button id="button-start">COMENZAR</button>
+    </div>
+
+  </section>
+
+  <section class="game-wilson">
+    <header>
+      <p>Fallos: <span class="fallos"></span></p>
+      <p>Parejas restantes: <span class="parejas-restantes"></span></p>
+    </header>
+
+    <div class="game-container">
+
+      <!-- <div class="carta" id="c${i+1}" data-carta-id="${1}">
+        <img src="./Recursos/Image/Cards/caratula.png" alt="carta" class="front-card">
+        <img src="./Recursos/Image/Cards/carta (${1}).png" alt="carta" class="back-card">
+      </div> -->
+
+    </div>
+  </section>
+
+  <script defer src="./index.js"></script>
 </body>
 </html>
